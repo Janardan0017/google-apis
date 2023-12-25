@@ -1,4 +1,4 @@
-package com.google.drive.googledrive.models;
+package com.google.apis.models;
 
 public class UpdateFileQdo {
 

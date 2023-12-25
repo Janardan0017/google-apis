@@ -1,4 +1,4 @@
-package com.google.drive.googledrive.service;
+package com.google.apis.service;
 
 import com.google.api.client.auth.oauth2.Credential;
 import com.google.api.client.extensions.java6.auth.oauth2.AuthorizationCodeInstalledApp;
@@ -12,7 +12,7 @@ import com.google.api.client.json.gson.GsonFactory;
 import com.google.api.client.util.store.FileDataStoreFactory;
 import com.google.api.services.drive.Drive;
 import com.google.api.services.drive.DriveScopes;
-import com.google.drive.googledrive.GoogleDriveApplication;
+import com.google.apis.Application;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -69,7 +69,7 @@ public class GoogleDrive {
      */
     private static Credential getCredentials(final NetHttpTransport HTTP_TRANSPORT) throws IOException {
         // Load client secrets.
-        InputStream in = GoogleDriveApplication.class.getResourceAsStream(CREDENTIALS_FILE_PATH);
+        InputStream in = Application.class.getResourceAsStream(CREDENTIALS_FILE_PATH);
         if (in == null) {
             throw new FileNotFoundException("Resource not found: " + CREDENTIALS_FILE_PATH);
         }

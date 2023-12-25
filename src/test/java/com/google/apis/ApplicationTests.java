@@ -1,10 +1,10 @@
-package com.google.drive.googledrive;
+package com.google.apis;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class GoogleDriveApplicationTests {
+class ApplicationTests {
 
 	@Test
 	void contextLoads() {
